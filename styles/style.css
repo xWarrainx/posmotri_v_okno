@@ -60,8 +60,8 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
-  padding: 133px 30px;
-  height: 800px;
+  margin: 133px 30px;
+  height: 534px;
 }
 
 .search-form {
