@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  position: relative;
 }
 
 h1,
@@ -35,4 +36,242 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.search-form__label,
+.button {
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  padding: 133px 30px;
+  height: 800px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 40px;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.search-form__fieldset {
+  border: none;
+  appearance: none;
+}
+
+.search-form__textfield {
+  all: unset;
+  width: 225px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  line-height: 1.2;
+  padding: 2px 0;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
+}
+
+.search-form__textfield:active {
+  border: none;
+}
+
+.search-form__label {
+  width: fit-content;
+  align-items: center;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:has(:active) {
+  border: none;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: #1b1919;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -3px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.search-form__submit-button {
+  margin: 20px 0 0;
+  padding: 6px 73px;
+}
+
+.more-button {
+  padding: 6px 0;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+}
+
+.search-form__checkbox + .search-form__pseudo-checkbox {
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  outline: 1px solid #000;
+  outline-offset: -2px;
+}
+
+.content__list {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 298px;
+  max-width: 400px;
+  position: relative;
+}
+
+.result__video-container {
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  flex-basis: auto;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  flex-basis: 200px;
+}
+
+.content__list-item {
+  margin-bottom: 32px;
+  max-width: 100%;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  border: 1px solid #fff;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:last-child {
+  margin: 0;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  margin-bottom: 26px;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.94;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 2px;
 }
