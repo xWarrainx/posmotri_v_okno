@@ -9,8 +9,11 @@ html {
 }
 
 .page {
+  display: grid;
   inline-size: 1200px;
   block-size: 100%;
+  place-items: center;
+  min-height: 100vh;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -59,8 +62,8 @@ ol {
   display: flex;
   justify-content: center;
   align-items: end;
+  inline-size: 1140px;
   gap: 30px;
-  padding: 133px 30px;
 }
 
 .search-form {
