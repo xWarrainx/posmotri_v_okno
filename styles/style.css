@@ -41,13 +41,6 @@ ol {
   list-style: none;
 }
 
-.search-form__label,
-.button {
-  cursor: pointer;
-  position: relative;
-  outline: none;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -64,6 +57,20 @@ ol {
   align-items: end;
   inline-size: 1140px;
   gap: 30px;
+}
+
+.result__video-container {
+  margin-bottom: 16px;
+  width: 711px;
+  height: 386px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
 }
 
 .search-form {
@@ -101,8 +108,11 @@ ol {
 }
 
 .search-form__label {
+  display: flex;
   width: fit-content;
   align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -118,38 +128,9 @@ ol {
   text-decoration: underline;
 }
 
-.button {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-  background-color: #1b1919;
-  color: #fff;
-  border: 1px solid #fff;
-  width: 100%;
-}
-
-.button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: -3px;
-}
-
-.button:hover {
-  text-decoration: underline;
-}
-
-.button:active {
-  background-color: #545050;
-  text-decoration: none;
-}
-
 .search-form__submit-button {
   margin: 20px 0 0;
   padding: 6px 73px;
-}
-
-.more-button {
-  padding: 6px 0;
 }
 
 .search-form__checkbox-list {
@@ -176,26 +157,43 @@ ol {
   outline-offset: -2px;
 }
 
+.button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: #1b1919;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -3px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.more-button {
+  padding: 6px 0;
+}
+
 .content__list {
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 298px;
   max-width: 400px;
   position: relative;
-}
-
-.result__video-container {
-  margin-bottom: 16px;
-  width: 711px;
-  height: 386px;
-  position: relative;
-}
-
-.result__video {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: fill;
 }
 
 .content__video-card {
