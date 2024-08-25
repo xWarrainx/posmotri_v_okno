@@ -194,6 +194,7 @@ ol {
   overflow-y: auto;
   overflow-x: hidden;
   height: 298px;
+  position: relative;
 }
 
 .content__video-card {
